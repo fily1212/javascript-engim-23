@@ -1,4 +1,4 @@
-let nomi = ["Giacomo", "Aldo", "Giovanni"];
+let nomi = ["Giacomo", "Aldo", "Giovanni", "Marina"];
 
 let table = document.getElementById("tabella");
 
