@@ -1,17 +1,20 @@
 let nomi = ["Giacomo", "Aldo", "Giovanni", "Marina"];
 
-let table = document.getElementById("tabella");
+function aggiungiNomi(){
 
-for(let i = 0; i < nomi.length; i++){
-    
-    let tr = document.createElement("tr");
-    let tdNome = document.createElement("td");
-    tdNome.innerHTML = nomi[i];
-    let tdNum = document.createElement("td");
-    tdNum.innerHTML = i+1;
-    tr.appendChild(tdNum);
-    tr.appendChild(tdNome);
-    table.appendChild(tr);
+    let table = document.getElementById("tabella");
+
+    for(let i = 0; i < nomi.length; i++){
+        
+        let tr = document.createElement("tr");
+        let tdNome = document.createElement("td");
+        tdNome.innerHTML = nomi[i];
+        let tdNum = document.createElement("td");
+        tdNum.innerHTML = i+1;
+        tr.appendChild(tdNum);
+        tr.appendChild(tdNome);
+        table.appendChild(tr);
+    } 
 }
 
 // creare una tabella che contenga 
