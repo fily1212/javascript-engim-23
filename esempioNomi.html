@@ -1,22 +1,29 @@
 <html>
     <head>
         <link href="style.css" rel=stylesheet />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
         <title>Prima lezione JS</title>
     </head>
 
     <body>
-        <h1>Nomi</h1>
-        <table id=tabella>
-            <tr>
-                <th>ID</th>
-                <th id="titolo">Nomi</th>
-            </tr>
-        </table>
-        <button onclick="coloraRosso()">Colora di rosso</button>
-        <br />
-        <label>Nome: </label><input type="text" id="nomeNuovo" />
-        <button onclick="aggiungiNomeNuovo()">Aggiungi</button>
-    </body>
+        <div class=container>
+            <h1>Nomi</h1>
+            <table id=tabella>
+                <tr>
+                    <th>ID</th>
+                    <th id="titolo">Nomi</th>
+                </tr>
+            </table>
+            <button onclick="coloraRosso()">Colora di rosso</button>
+            <br />
+            <label>Nome: </label>
+            <input class="form-control" type="text" placeholder="Nome" aria-label="Nome" id="nomeNuovo">
+            <button type="button" class="btn btn-primary" onclick="aggiungiNomeNuovo()">Aggiungi Nome</button>
+            
+        </div>
+         </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <!--<script src="esempio1.js"></script>-->
     <script src="esempioNomi.js"></script>
 </html>
