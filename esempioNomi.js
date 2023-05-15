@@ -53,6 +53,7 @@ function coloraRosso(){
 // alla tabella
 function aggiungiNomeNuovo(){
     let nomeNuovo = document.getElementById('nomeNuovo').value;
+    /*
     // metodo 1: contare i tr 
     let numeroNuovo = document.querySelectorAll("table#tabella tr");
     console.log(numeroNuovo.length);
@@ -75,10 +76,15 @@ function aggiungiNomeNuovo(){
     //metodo 5: accedere all'ultimo elemento di una tabella
     let tabella2= document.getElementById("tabella");
     let numNuovo2 = parseInt(tabella2.rows[tabella2.rows.length - 1].cells[0].innerHTML) + 1;
-    console.log(numNuovo2);
+    console.log(numNuovo2);*/
 
     // utilizza il metodo 3
-    aggiungiNome(nomeNuovo);
+    if(nomeNuovo == "" || nomeNuovo == "undefined")
+        alert("Inserisci il nome");
+    else{
+        aggiungiNome(nomeNuovo);
+        document.getElementById('nomeNuovo').value = "";
+    }
 
     // utilizza il metodo 1,2,4,5
     //aggiungiNome(nomeNuovo,numNuovo);
