@@ -24,5 +24,11 @@ function mostraNomi(){
 }
 
 function filtro(){
-    
+    let iniziale = document.getElementById("inizialeText").value;
+    nomiDaVisualizzare = [];
+    for(nome of nomi){
+        if(nome.toLowerCase().startsWith(iniziale.toLowerCase()))
+            nomiDaVisualizzare.push(nome);
+    }
+    mostraNomi();
 }
