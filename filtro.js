@@ -22,3 +22,7 @@ function mostraNomi(){
     }
 
 }
+
+function filtro(){
+    
+}
