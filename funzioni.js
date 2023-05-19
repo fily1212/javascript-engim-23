@@ -41,7 +41,6 @@ persone.forEach((persona)=>{
 console.log(filtrati);
 
 
-
-fetch('https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits')
+fetch('https://gpa.madbob.org/query.php?stop=966')
   .then(response => response.json())
-  .then(commits => console.log(commits[0].author.login));
+  .then(passaggi =>{ console.log(passaggi) });
