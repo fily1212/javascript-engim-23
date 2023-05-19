@@ -50,7 +50,3 @@ function inizia(persona){
     
     return persona.nome.toLowerCase().startsWith(iniziale.toLowerCase());   
 }
-
-persone.forEach((persona)=>{
-
-});
