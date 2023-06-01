@@ -39,8 +39,13 @@ persone.forEach((persona)=>{
     ul.appendChild(li);
 });
 console.log(filtrati);
+/*
 
 
-fetch('https://gpa.madbob.org/query.php?stop=966')
+*/
+
+fetch('https://api.open-meteo.com/v1/forecast?latitude=45.07&longitude=7.69&current_weather=true&hourly=weathercode&timezone=CET&daily=weathercode')
   .then(response => response.json())
   .then(passaggi =>{ console.log(passaggi) });
+
+// console.log("ciao");
